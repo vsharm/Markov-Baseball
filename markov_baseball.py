@@ -28,68 +28,66 @@ print "Stats", pSingle, pDouble, pTriple, pHR, pWalkSingle, pOut, pWalk
 
 
 transition = numpy.matrix([
-[pHR,pWalkSingle,pDouble,pTriple,0,0,0,0,pOut,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
-[pHR,0,pDoubleR,pTriple,pWalkSingleR,pSingleR,pDoubleR,0,0,pOut,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
-[pHR,pSingleRii,pDouble,pTriple,pWalk,pSingleRi,0,0,0,0,pOut,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
-[pHR,pSingle,pDouble,pTriple,0,pWalk,0,0,0,0,0,pOut,0,0,0,0,0,0,0,0,0,0,0,0,0],
-[pHR,0,pDoubleR,pTriple,pSingleRi,pSingleR,pDoubleR,pWalkSingleR,0,0,0,0,pOut,0,0,0,0,0,0,0,0,0,0,0,0],
-[pHR,0,pDoubleR,pTriple,pSingleR,pSingleR,pDoubleR,pWalk,0,0,0,0,0,pOut,0,0,0,0,0,0,0,0,0,0,0],
-[pHR,pSingleRi,pDouble,pTriple,0,pSingleR,0,pWalk,0,0,0,0,0,0,pOut,0,0,0,0,0,0,0,0,0,0],
-[pHR,0,pDoubleR,pTriple,pSingleR,pSingleR,pDoubleR,pWalk,0,0,0,0,0,0,0,pOut,0,0,0,0,0,0,0,0,0],
-[0,0,0,0,0,0,0,0,pHR,pWalkSingle,pDouble,pTriple,0,0,0,0,pOut,0,0,0,0,0,0,0,0],
-[0,0,0,0,0,0,0,0,pHR,0,pDoubleR,pTriple,pWalkSingleR,pSingleR,pDoubleR,0,0,pOut,0,0,0,0,0,0,0],
-[0,0,0,0,0,0,0,0,pHR,pSingleRii,pDouble,pTriple,pWalk,pSingleRi,0,0,0,0,pOut,0,0,0,0,0,0],
-[0,0,0,0,0,0,0,0,pHR,pSingle,pDouble,pTriple,0,pWalk,0,0,0,0,0,pOut,0,0,0,0,0],
-[0,0,0,0,0,0,0,0,pHR,0,pDoubleR,pTriple,pSingleRi,pSingleR,pDoubleR,pWalkSingleR,0,0,0,0,pOut,0,0,0,0],
-[0,0,0,0,0,0,0,0,pHR,0,pDoubleR,pTriple,pSingleR,pSingleR,pDoubleR,pWalk,0,0,0,0,0,pOut,0,0,0],
-[0,0,0,0,0,0,0,0,pHR,pSingleRi,pDouble,pTriple,0,pSingleR,0,pWalk,0,0,0,0,0,0,pOut,0,0],
-[0,0,0,0,0,0,0,0,pHR,0,pDoubleR,pTriple,pSingleR,pSingleR,pDoubleR,pWalk,0,0,0,0,0,0,0,pOut,0],
-[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,pHR,pWalkSingle,pDouble,pTriple,0,0,0,0,pOut],
-[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,pHR,0,pDoubleR,pTriple,pWalkSingleR,pSingleR,pDoubleR,0,pOut],
-[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,pHR,pSingleRii,pDouble,pTriple,pWalk,pSingleRi,0,0,pOut],
-[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,pHR,pSingle,pDouble,pTriple,0,pWalk,0,0,pOut],
-[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,pHR,0,pDoubleR,pTriple,pSingleRi,pSingleR,pDoubleR,pWalkSingleR,pOut],
-[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,pHR,0,pDoubleR,pTriple,pSingleR,pSingleR,pDoubleR,pWalk,pOut],
-[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,pHR,pSingleRi,pDouble,pTriple,0,pSingleR,0,pWalk,pOut],
-[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,pHR,0,pDoubleR,pTriple,pSingleR,pSingleR,pDoubleR,pWalk,pOut],
-[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
-					   ])
+                           [pHR,pWalkSingle,pDouble,pTriple,0,0,0,0,pOut,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                           [pHR,0,pDoubleR,pTriple,pWalkSingleR,pSingleR,pDoubleR,0,0,pOut,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                           [pHR,pSingleRii,pDouble,pTriple,pWalk,pSingleRi,0,0,0,0,pOut,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                           [pHR,pSingle,pDouble,pTriple,0,pWalk,0,0,0,0,0,pOut,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                           [pHR,0,pDoubleR,pTriple,pSingleRi,pSingleR,pDoubleR,pWalkSingleR,0,0,0,0,pOut,0,0,0,0,0,0,0,0,0,0,0,0],
+                           [pHR,0,pDoubleR,pTriple,pSingleR,pSingleR,pDoubleR,pWalk,0,0,0,0,0,pOut,0,0,0,0,0,0,0,0,0,0,0],
+                           [pHR,pSingleRi,pDouble,pTriple,0,pSingleR,0,pWalk,0,0,0,0,0,0,pOut,0,0,0,0,0,0,0,0,0,0],
+                           [pHR,0,pDoubleR,pTriple,pSingleR,pSingleR,pDoubleR,pWalk,0,0,0,0,0,0,0,pOut,0,0,0,0,0,0,0,0,0],
+                           [0,0,0,0,0,0,0,0,pHR,pWalkSingle,pDouble,pTriple,0,0,0,0,pOut,0,0,0,0,0,0,0,0],
+                           [0,0,0,0,0,0,0,0,pHR,0,pDoubleR,pTriple,pWalkSingleR,pSingleR,pDoubleR,0,0,pOut,0,0,0,0,0,0,0],
+                           [0,0,0,0,0,0,0,0,pHR,pSingleRii,pDouble,pTriple,pWalk,pSingleRi,0,0,0,0,pOut,0,0,0,0,0,0],
+                           [0,0,0,0,0,0,0,0,pHR,pSingle,pDouble,pTriple,0,pWalk,0,0,0,0,0,pOut,0,0,0,0,0],
+                           [0,0,0,0,0,0,0,0,pHR,0,pDoubleR,pTriple,pSingleRi,pSingleR,pDoubleR,pWalkSingleR,0,0,0,0,pOut,0,0,0,0],
+                           [0,0,0,0,0,0,0,0,pHR,0,pDoubleR,pTriple,pSingleR,pSingleR,pDoubleR,pWalk,0,0,0,0,0,pOut,0,0,0],
+                           [0,0,0,0,0,0,0,0,pHR,pSingleRi,pDouble,pTriple,0,pSingleR,0,pWalk,0,0,0,0,0,0,pOut,0,0],
+                           [0,0,0,0,0,0,0,0,pHR,0,pDoubleR,pTriple,pSingleR,pSingleR,pDoubleR,pWalk,0,0,0,0,0,0,0,pOut,0],
+                           [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,pHR,pWalkSingle,pDouble,pTriple,0,0,0,0,pOut],
+                           [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,pHR,0,pDoubleR,pTriple,pWalkSingleR,pSingleR,pDoubleR,0,pOut],
+                           [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,pHR,pSingleRii,pDouble,pTriple,pWalk,pSingleRi,0,0,pOut],
+                           [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,pHR,pSingle,pDouble,pTriple,0,pWalk,0,0,pOut],
+                           [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,pHR,0,pDoubleR,pTriple,pSingleRi,pSingleR,pDoubleR,pWalkSingleR,pOut],
+                           [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,pHR,0,pDoubleR,pTriple,pSingleR,pSingleR,pDoubleR,pWalk,pOut],
+                           [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,pHR,pSingleRi,pDouble,pTriple,0,pSingleR,0,pWalk,pOut],
+                           [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,pHR,0,pDoubleR,pTriple,pSingleR,pSingleR,pDoubleR,pWalk,pOut],
+                           [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
+                           ])
 
 runVector  = numpy.matrix([
-						  [1],
-						  [1],
-						  [1],
-						  [4],
-						  [4],
-						  [4],
-						  [5],
-						  [5],
-						  [5],
-						  [5],
-						  [5],
-						  [5],
-						  [7],
-						  [7],
-						  [7],
-						  [7],
-						  [7],
-						  [7],
-						  [9],
-						  [9],
-						  [9],
-						  [11],
-						  [11],
-						  [11],
-						  [0]
-						  ])
+                           [pHR],
+                           [2*pHR + pTriple],
+                           [2*pHR + pSingle + pDouble + pTriple],
+                           [2*pHR + pSingle + pDouble + pTriple],
+                           [3*pHR + pSingle + pDouble + 2*pTriple],
+                           [3*pHR + pSingle + pDouble + 2*pTriple],
+                           [3*pHR + 2*pSingle + 2*pDouble + 2*pTriple],
+                           [4*pHR + 2*pSingle + 2*pDouble + 3*pTriple + pWalk],
+                           [pHR],
+                           [2*pHR + pTriple],
+                           [2*pHR + pSingle + pDouble + pTriple],
+                           [2*pHR + pSingle + pDouble + pTriple],
+                           [3*pHR + pSingle + pDouble + 2*pTriple],
+                           [3*pHR + pSingle + pDouble + 2*pTriple],
+                           [3*pHR + 2*pSingle + 2*pDouble + 2*pTriple],
+                           [4*pHR + 2*pSingle + 2*pDouble + 3*pTriple + pWalk],
+                           [pHR],
+                           [2*pHR + pTriple],
+                           [2*pHR + pSingle + pDouble + pTriple],
+                           [2*pHR + pSingle + pDouble + pTriple],
+                           [3*pHR + pSingle + pDouble + 2*pTriple],
+                           [3*pHR + pSingle + pDouble + 2*pTriple],
+                           [3*pHR + 2*pSingle + 2*pDouble + 2*pTriple],
+                           [4*pHR + 2*pSingle + 2*pDouble + 3*pTriple + pWalk],
+                           [0]
+                           ])
 
 resultMatrix = runVector
 for z in  range(1,8):
-  curentTransition = linalg.matrix_power(transition, z)
-  tempMatrix = numpy.dot(curentTransition,runVector)
-  resultMatrix = numpy.add(resultMatrix,tempMatrix)
+    curentTransition = linalg.matrix_power(transition, z)
+    tempMatrix = numpy.dot(curentTransition,runVector)
+    resultMatrix = numpy.add(resultMatrix,tempMatrix)
 
 print "resultMatrix"
 print resultMatrix
-
-
