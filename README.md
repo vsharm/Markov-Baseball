@@ -1,6 +1,8 @@
 Markov Analysis of Baseball Run Socring Events
 ------------------------------------
 
+The main file of this project is Markov-Baseball.py
+
 Sources
 ---------------
 Pankin: http://www.pankin.com/markov/theory.htm
