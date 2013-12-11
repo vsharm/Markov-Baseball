@@ -1,7 +1,7 @@
 Markov Analysis of Baseball Run Socring Events
 ------------------------------------
 
-The main file of this project is Markov-Baseball.py
+The main file of this project is Markov_Baseball.py
 
 Sources
 ---------------
