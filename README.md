@@ -14,3 +14,4 @@ Kuennen PPT: www.uwosh.edu/faculty_staff/kuennene/Baseball.ppt‎‎
 Palacios: http://m.njit.edu/~bukiet/Papers/ball.pdf
 
 
+Baseball SQL Event Database from: http://www.baseballheatmaps.com/retrosheet-database-download/
