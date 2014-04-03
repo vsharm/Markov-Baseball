@@ -11,6 +11,7 @@ Results applied to Community College Baseball League
 Stolen Bases
 ********************
 SB Success Rate:  0.741522230595
+
 0_1__  ER Pre:  0.82   0__2_  ER Post:  0.84   Steal
 
 0__2_  ER Pre:  1.06   0___3  ER Post:  0.84   Dont Steal
